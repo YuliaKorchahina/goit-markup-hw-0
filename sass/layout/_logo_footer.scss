@@ -1,0 +1,23 @@
+.footer__logo {
+  span {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--white);
+    transition: color var(--transition-time) var(--transition-timing-function);
+  }
+  &.link {
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+}
+
+.footer__logo > span :hover,
+.footer__logo > span :focus {
+  color: var(--accent-color);
+}
+.footer__logo :hover,
+.footer__logo :focus {
+  color: var(--accent-color);
+}
