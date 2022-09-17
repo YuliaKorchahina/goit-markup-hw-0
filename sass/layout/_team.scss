@@ -3,23 +3,18 @@
 }
 
 .team__title {
-  color: var(--maine);
+  @include font(36px, 700, 42px);
   margin-bottom: 50px;
-
-  text-align: center;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  color: var(--maine);
 }
 
 .team__member {
-  color: var(--maine);
   margin-bottom: 10px;
-
   text-align: center;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.19;
+  color: var(--maine);
 }
 
 .team__position {
@@ -50,6 +45,11 @@
 .socialmedia-list__icon {
   fill: var(--bgc);
   background-color: transparent;
+
+  .socialmedia-list__item:hover &,
+  .socialmedia-list__item:focus & {
+    fill: var(--white);
+  }
 }
 
 .socialmedia-list {
@@ -70,14 +70,9 @@
   background-color: transparent;
   transition: background-color var(--transition-time) var(--transition-timing-function),
     fill var(--transition-time) var(--transition-timing-function);
-}
 
-.socialmedia-list__item:hover,
-.socialmedia-list__item:focus {
-  background-color: var(--accent-color);
-}
-
-.socialmedia-list__item:hover .socialmedia-list__icon,
-.socialmedia-list__item:focus .socialmedia-list__icon {
-  fill: var(--white);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
 }

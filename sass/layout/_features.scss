@@ -8,12 +8,9 @@
 }
 
 .features-title {
+  @include font(14px, 700, 16px);
   text-transform: uppercase;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 16px;
   margin-bottom: 10px;
-  font-size: 14px;
   color: var(--maine);
 }
 

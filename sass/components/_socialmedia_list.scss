@@ -26,6 +26,7 @@
   background-color: transparent;
   transition: background-color var(--transition-time) var(--transition-timing-function),
     fill var(--transition-time) var(--transition-timing-function);
+
   &:hover,
   &:focus {
     background-color: var(--accent-color);

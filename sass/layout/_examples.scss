@@ -1,8 +1,6 @@
 .examples-title {
+  @include font(36px, 700, 42px);
   color: var(--maine);
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
   text-align: center;
   margin-bottom: 50px;
 }

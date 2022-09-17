@@ -1,11 +1,14 @@
-@import '../css/normileze/normileze.css';
 @import './utils/variables';
+@import './utils/mixin';
+
 @import './base/common';
 @import './base/section';
 @import './base/container';
-@import './components/pattern';
+
+@import './components/pattern_visualy-hidden';
 @import './components/button';
 @import './components/is-hidden';
+
 @import './layout/logo_header';
 @import './layout/header';
 @import './layout/hero';
